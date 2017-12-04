@@ -13,6 +13,12 @@ $tertiary-color-name: 'Gold';
 $accent-color: #FF6347;
 $accent-color-name: 'Tomato';
 
+$lighten-amount: 8;
+$light-saturate-amount: 10;
+
+$darken-amount: 10;
+$dark-saturate-amount: 20;
+
 $colors: (
   primary: $primary-color,
   secondary: $secondary-color,

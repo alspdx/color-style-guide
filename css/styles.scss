@@ -53,10 +53,6 @@ img {
 }
 
 @each $color-type, $color-value in $colors {
-  .color-#{$color-type} .swatch {
-    background-color: $color-value;
-  }
-
   .color-#{$color-type} .label-rgb:before {
     content: "#{red($color-value)} / #{green($color-value)} / #{blue($color-value)}";
   }
@@ -64,6 +60,20 @@ img {
   .color-#{$color-type} .label-hsl:before {
     content: "#{round(hue($color-value))} / #{round(saturation($color-value))} / #{round(lightness($color-value))}";
   }
+
+  .color-#{$color-type} .swatch {
+    background: $color-value;
+  }
+
+  .color-#{$color-type} .swatch-light {
+    background: lighten(saturate($color-value, $light-saturate-amount), $lighten-amount);
+  }
+
+  .color-#{$color-type} .swatch-dark {
+    background: darken(saturate($color-value, $dark-saturate-amount),
+    $darken-amount);
+  }
+
 }
 
 @each $color-type, $color-name in $color-names {

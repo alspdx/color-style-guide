@@ -67,17 +67,20 @@ img {
 .column-12 {
   width: 100%; }
 
-.color-primary .swatch {
-  background-color: #D9F5E8; }
-
 .color-primary .label-rgb:before {
   content: "217 / 245 / 232"; }
 
 .color-primary .label-hsl:before {
   content: "152deg / 58% / 91%"; }
 
-.color-secondary .swatch {
-  background-color: #37CBC2; }
+.color-primary .swatch {
+  background: #D9F5E8; }
+
+.color-primary .swatch-light {
+  background: #f9fefc; }
+
+.color-primary .swatch-dark {
+  background: #a7f4d0; }
 
 .color-secondary .label-rgb:before {
   content: "55 / 203 / 194"; }
@@ -85,8 +88,14 @@ img {
 .color-secondary .label-hsl:before {
   content: "176deg / 59% / 51%"; }
 
-.color-tertiary .swatch {
-  background-color: #FB3; }
+.color-secondary .swatch {
+  background: #37CBC2; }
+
+.color-secondary .swatch-light {
+  background: #4dded5; }
+
+.color-secondary .swatch-dark {
+  background: #16b9af; }
 
 .color-tertiary .label-rgb:before {
   content: "255 / 187 / 51"; }
@@ -94,14 +103,29 @@ img {
 .color-tertiary .label-hsl:before {
   content: "40deg / 100% / 60%"; }
 
-.color-accent .swatch {
-  background-color: #FF6347; }
+.color-tertiary .swatch {
+  background: #FB3; }
+
+.color-tertiary .swatch-light {
+  background: #ffc95c; }
+
+.color-tertiary .swatch-dark {
+  background: #ffaa00; }
 
 .color-accent .label-rgb:before {
   content: "255 / 99 / 71"; }
 
 .color-accent .label-hsl:before {
   content: "9deg / 100% / 64%"; }
+
+.color-accent .swatch {
+  background: #FF6347; }
+
+.color-accent .swatch-light {
+  background: #ff8670; }
+
+.color-accent .swatch-dark {
+  background: #ff3814; }
 
 .color-primary .label-name:before {
   content: "Mint"; }
