@@ -1,0 +1,28 @@
+$grid-columns: 12;
+$grid-max-width: 1200px;
+
+$primary-color: #D9F5E8;
+$primary-color-name: 'Mint';
+
+$secondary-color: #37CBC2;
+$secondary-color-name: 'Teal';
+
+$tertiary-color: #FB3;
+$tertiary-color-name: 'Gold';
+
+$accent-color: #FF6347;
+$accent-color-name: 'Tomato';
+
+$colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  tertiary: $tertiary-color,
+  accent: $accent-color
+);
+
+$color-names: (
+  primary: $primary-color-name,
+  secondary: $secondary-color-name,
+  tertiary: $tertiary-color-name,
+  accent: $accent-color-name
+);

@@ -1,0 +1,130 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrapper, .row {
+  *zoom: 1; }
+  .wrapper:before, .row:before, .wrapper:after, .row:after {
+    content: " ";
+    display: table; }
+  .wrapper:after, .row:after {
+    clear: both; }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; }
+
+.wrapper {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px; }
+
+.column-1 {
+  width: 8.33333%; }
+
+.column-2 {
+  width: 16.66667%; }
+
+.column-3 {
+  width: 25%; }
+
+.column-4 {
+  width: 33.33333%; }
+
+.column-5 {
+  width: 41.66667%; }
+
+.column-6 {
+  width: 50%; }
+
+.column-7 {
+  width: 58.33333%; }
+
+.column-8 {
+  width: 66.66667%; }
+
+.column-9 {
+  width: 75%; }
+
+.column-10 {
+  width: 83.33333%; }
+
+.column-11 {
+  width: 91.66667%; }
+
+.column-12 {
+  width: 100%; }
+
+.color-primary .swatch {
+  background-color: #D9F5E8; }
+
+.color-primary .label-rgb:before {
+  content: "217 / 245 / 232"; }
+
+.color-primary .label-hsl:before {
+  content: "152deg / 58% / 91%"; }
+
+.color-secondary .swatch {
+  background-color: #37CBC2; }
+
+.color-secondary .label-rgb:before {
+  content: "55 / 203 / 194"; }
+
+.color-secondary .label-hsl:before {
+  content: "176deg / 59% / 51%"; }
+
+.color-tertiary .swatch {
+  background-color: #FB3; }
+
+.color-tertiary .label-rgb:before {
+  content: "255 / 187 / 51"; }
+
+.color-tertiary .label-hsl:before {
+  content: "40deg / 100% / 60%"; }
+
+.color-accent .swatch {
+  background-color: #FF6347; }
+
+.color-accent .label-rgb:before {
+  content: "255 / 99 / 71"; }
+
+.color-accent .label-hsl:before {
+  content: "9deg / 100% / 64%"; }
+
+.color-primary .label-name:before {
+  content: "Mint"; }
+
+.color-secondary .label-name:before {
+  content: "Teal"; }
+
+.color-tertiary .label-name:before {
+  content: "Gold"; }
+
+.color-accent .label-name:before {
+  content: "Tomato"; }
+
+.swatch {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 2rem; }
+
+.label {
+  text-align: left;
+  font-size: 1.5rem;
+  display: block; }
+  .label:empty {
+    display: block; }
+
+/*# sourceMappingURL=styles.css.map */
