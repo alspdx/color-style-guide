@@ -74,6 +74,7 @@ img {
     $darken-amount);
   }
 
+
 }
 
 @each $color-type, $color-name in $color-names {
@@ -96,4 +97,8 @@ img {
   &:empty {
     display: block;
   }
+}
+
+.no-padding {
+  padding: 0;
 }
