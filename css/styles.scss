@@ -74,12 +74,21 @@ img {
     $darken-amount);
   }
 
-
+  @each $type, $value in $colors {
+    .color-#{$type} .mixed-with-#{$color-type} .swatch {
+      background: mix($color-value, $value, $mix-weight);
+    }
+  }
 }
 
 @each $color-type, $color-name in $color-names {
-  .color-#{$color-type} .label-name:before {
+  .color-#{$color-type} .label-name:before,
+  .color-#{$color-type} h3.subheader:before {
     content: "#{$color-name}";
+  }
+
+  .mixed-with-#{$color-type} h4:before {
+    content: 'Mixed with #{$mix-weight} #{$color-name}';
   }
 }
 
@@ -87,16 +96,24 @@ img {
   width: 100%;
   height: 150px;
   margin-bottom: 2rem;
+
+  &.swatch-small {
+    height: 50px;
+  }
 }
 
 .label {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: block;
 
   &:empty {
     display: block;
   }
+}
+
+.label-color {
+  text-align: right;
 }
 
 .no-padding {

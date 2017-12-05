@@ -82,6 +82,18 @@ img {
 .color-primary .swatch-dark {
   background: #a7f4d0; }
 
+.color-primary .mixed-with-primary .swatch {
+  background: #d9f5e8; }
+
+.color-secondary .mixed-with-primary .swatch {
+  background: #a0e6db; }
+
+.color-tertiary .mixed-with-primary .swatch {
+  background: #e6e1a9; }
+
+.color-accent .mixed-with-primary .swatch {
+  background: #e6c2b0; }
+
 .color-secondary .label-rgb:before {
   content: "55 / 203 / 194"; }
 
@@ -96,6 +108,18 @@ img {
 
 .color-secondary .swatch-dark {
   background: #16b9af; }
+
+.color-primary .mixed-with-secondary .swatch {
+  background: #70dacf; }
+
+.color-secondary .mixed-with-secondary .swatch {
+  background: #37cbc2; }
+
+.color-tertiary .mixed-with-secondary .swatch {
+  background: #7dc590; }
+
+.color-accent .mixed-with-secondary .swatch {
+  background: #7da797; }
 
 .color-tertiary .label-rgb:before {
   content: "255 / 187 / 51"; }
@@ -112,6 +136,18 @@ img {
 .color-tertiary .swatch-dark {
   background: #ffaa00; }
 
+.color-primary .mixed-with-tertiary .swatch {
+  background: #f2cf72; }
+
+.color-secondary .mixed-with-tertiary .swatch {
+  background: #b9c165; }
+
+.color-tertiary .mixed-with-tertiary .swatch {
+  background: #ffbb33; }
+
+.color-accent .mixed-with-tertiary .swatch {
+  background: #ff9c3a; }
+
 .color-accent .label-rgb:before {
   content: "255 / 99 / 71"; }
 
@@ -127,29 +163,62 @@ img {
 .color-accent .swatch-dark {
   background: #ff3814; }
 
-.color-primary .label-name:before {
+.color-primary .mixed-with-accent .swatch {
+  background: #f2967f; }
+
+.color-secondary .mixed-with-accent .swatch {
+  background: #b98772; }
+
+.color-tertiary .mixed-with-accent .swatch {
+  background: #ff8240; }
+
+.color-accent .mixed-with-accent .swatch {
+  background: tomato; }
+
+.color-primary .label-name:before,
+.color-primary h3.subheader:before {
   content: "Mint"; }
 
-.color-secondary .label-name:before {
+.mixed-with-primary h4:before {
+  content: "Mixed with 65% Mint"; }
+
+.color-secondary .label-name:before,
+.color-secondary h3.subheader:before {
   content: "Teal"; }
 
-.color-tertiary .label-name:before {
+.mixed-with-secondary h4:before {
+  content: "Mixed with 65% Teal"; }
+
+.color-tertiary .label-name:before,
+.color-tertiary h3.subheader:before {
   content: "Gold"; }
 
-.color-accent .label-name:before {
+.mixed-with-tertiary h4:before {
+  content: "Mixed with 65% Gold"; }
+
+.color-accent .label-name:before,
+.color-accent h3.subheader:before {
   content: "Tomato"; }
+
+.mixed-with-accent h4:before {
+  content: "Mixed with 65% Tomato"; }
 
 .swatch {
   width: 100%;
   height: 150px;
   margin-bottom: 2rem; }
+  .swatch.swatch-small {
+    height: 50px; }
 
 .label {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: block; }
   .label:empty {
     display: block; }
+
+.label-color {
+  text-align: right; }
 
 .no-padding {
   padding: 0; }
